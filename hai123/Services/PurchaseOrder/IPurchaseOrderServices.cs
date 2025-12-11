@@ -1,6 +1,10 @@
-﻿namespace hai123.Services.PurchaseOrder;
+﻿using ConnectDatabaseAndSimpleApi.Dto;
+using hai123.Dto;
+using hai123.Extensions;
 
-public class IPurchaseOrderServices
+namespace hai123.Services.PurchaseOrder;
+
+public interface IPurchaseOrderServices
 {
     Task<Entities.PurchaseOrder> CreateAsync(CreatePurchaseOrder purchaseOrder);
     Task<Entities.PurchaseOrder> UpdateAsync(int id, UpdatePurchaseOrder purchaseOrder);

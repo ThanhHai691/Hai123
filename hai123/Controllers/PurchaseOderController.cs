@@ -1,12 +1,14 @@
 ﻿using ConnectDatabaseAndSimpleApi.Dto;
-using ConnectDatabaseAndSimpleApi.Extensions;
+using hai123.Dto;
+using hai123.Extensions;
+using hai123.Services.PurchaseOrder;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ConnectDatabaseAndSimpleApi.Controllers;
+namespace hai123.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class PurchaseOrderController(IPurchaseOrderService purchaseOrderService)
+public class PurchaseOrderController(IPurchaseOrderServices purchaseOrderService)
     : ControllerBase
 {
     [HttpGet]
@@ -45,8 +47,4 @@ public class PurchaseOrderController(IPurchaseOrderService purchaseOrderService)
         await purchaseOrderService.DeleteAsync(id);
         return Ok();
     }
-}
-
-public interface IPurchaseOrderService
-{
 }

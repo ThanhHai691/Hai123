@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("hai123")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d32365b8519ee3915bb7f54d3b6b72aae3c41636")]
 [assembly: System.Reflection.AssemblyProductAttribute("hai123")]
 [assembly: System.Reflection.AssemblyTitleAttribute("hai123")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

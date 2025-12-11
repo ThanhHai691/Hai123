@@ -3,7 +3,6 @@
 
 namespace hai123.Repositories.Repository;
 
-
 public class Repository<T>(AppDbContext context) : IRepository<T>
     where T : class, IEntity
 {

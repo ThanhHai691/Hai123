@@ -1,15 +1,17 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace ConnectDatabaseAndSimpleApi.Dto;
+namespace hai123.Dto;
 
 public class UpdatePurchaseOrder
 {
     [MaxLength(255)] public string PurchaseOrderCode { get; set; } = string.Empty;
-    
+
+    public int UserId { get; set; }
+
     public List<UpdatePurchaseOrderLine> PurchaseOrderLines { get; set; } = [];
 }
 
-public class UpdatePurchaseOrderLine
+public abstract class UpdatePurchaseOrderLine
 {
     public int? Id { get; set; }
 
