@@ -1,0 +1,6 @@
+@hai123_HostAddress = http://localhost:5022
+
+GET {{hai123_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
